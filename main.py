@@ -303,14 +303,14 @@ class MainWidget(RelativeLayout):
             self.sound_music1.stop()
             self.sound_gameover_impact.play()
             Clock.schedule_once(self.play_game_over_voice_sound, 1)
-            print("Game over")
+            #  print("Game over")
 
     def play_game_over_voice_sound(self, dt):
         if self.state_game_over:
             self.sound_gameover_voice.play()
 
     def on_menu_button_press(self):
-        print("Button")
+        #  print("Button")
         if self.state_game_over:
             self.sound_restart.play()
         else:
